@@ -1,0 +1,133 @@
+:root{
+    --main-color: #080A0C;
+    --side-color: #00FF41;
+    --second-color: #191B1D;
+    --second-minus: #2A2C2E;
+    --text: #E6EDF3;
+}
+
+body{
+    background-image: linear-gradient(70deg, var(--second-minus), var(--main-color));
+    font-family: 'Roboto', "Arial", sans-serif;
+    color: var(--text);
+}
+
+.header-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.nav-link{
+    color: var(--text);
+    font-size: large;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover{
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--side-color);
+}
+
+.code-header{
+    color: var(--side-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.colored{
+    color: var(--side-color)
+}
+
+.text-section{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-tiles{
+    padding: 3%;
+    margin: 2% 0;
+    width: 28rem;
+    height: 20rem;
+    background-color: var(--second-color);
+    border-radius: 2%;
+    font-size: 20px;
+}
+
+.padded-text{
+    padding-top: 5%;
+}
+
+@media (width <= 900px) {
+    .text-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-tiles{
+        width: 95%;
+        height: auto;
+    }
+}
+
+@media (900 <= width <= 1700px) {
+    .text-tiles{
+        width: 20rem;
+    }
+}
+
+.pfp{
+    height: 50%;
+    border: 3px solid var(--side-color) ;
+    border-radius: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-tiles:hover{
+    background-color: var(--second-minus);
+}
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    width: 20%;
+    padding: 2%;
+    font-size: 2em;
+    text-align: center;
+}
+
+.discord{
+    color: #7289da;
+}
+.github > a{
+    color: #FFF;
+}
+
+.youtube > a{
+    color:#FF0000;
+}
+#hehe{
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    font-size: small;
+    color: var(--side-color);
+}
