@@ -131,3 +131,10 @@ body{
     font-size: small;
     color: var(--side-color);
 }
+
+.THM-profile-card{
+    width: 100%;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
